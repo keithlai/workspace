@@ -1,0 +1,3 @@
+# Module wedding_reception
+# RPC service class, partial path of RPC policy file
+com.keith.wedding.client.GreetingService, F0D321C3271B0348CC15D365105EFC36.gwt.rpc

@@ -1,0 +1,2 @@
+serviceClass: com.keith.wedding.client.GreetingService
+path: F0D321C3271B0348CC15D365105EFC36.gwt.rpc
