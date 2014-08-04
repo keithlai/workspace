@@ -1,0 +1,17 @@
+package com.keith.wedding.servlet;
+
+import java.io.IOException;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class GAE_WRServlet extends HttpServlet { 
+public void doGet(HttpServletRequest req, HttpServletResponse 
+resp)  throws IOException { 
+double h = Double.parseDouble(req.getParameter("h")); 
+double w = Double.parseDouble(req.getParameter("w")); 
+ resp.setContentType("text/plain"); 
+ resp.getWriter().println("Hello, BMI=" + (w / h / h)); 
+ } 
+} 

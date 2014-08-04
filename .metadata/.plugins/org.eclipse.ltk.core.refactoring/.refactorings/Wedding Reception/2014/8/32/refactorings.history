@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.keith.wedding.servlet.GAE_BMIServlet.java&apos; to &apos;GAE_WRServlet.java&apos;&#x0D;&#x0A;- Original project: &apos;Wedding Reception&apos;&#x0D;&#x0A;- Original element: &apos;com.keith.wedding.servlet.GAE_BMIServlet.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.keith.wedding.servlet.GAE_WRServlet.java&apos;" description="Rename compilation unit &apos;GAE_BMIServlet.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.keith.wedding.servlet{GAE_BMIServlet.java" name="GAE_WRServlet.java" references="false" stamp="1407172090729" version="1.0"/>
+</session>
