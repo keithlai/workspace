@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+	<script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" language="javascript" src="//cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" language="javascript" src="mytable.js"></script>
+<script>
+
+
+$(document).ready(function() {
+    init1();
+    $( "#list1" ).click(function() {
+    	var table = $('#weddingreception').DataTable();
+	
+		table.ajax.url( 'data/data.txt' ).load();
+	});
+    $( "#list2" ).click(function() {
+    	var table = $('#weddingreception').DataTable();
+
+		table.ajax.url( 'data/data2.txt' ).load();
+  		
+	});
+	
+ 	$("#in").click(function() {
+    	var table = $('#weddingreception').DataTable();
+		table.search( 'in' ).draw();
+	});
+ 	$("#out").click(function() {
+    	var table = $('#weddingreception').DataTable();
+		table.search( 'out' ).draw();
+	});
+ 	$("#all").click(function() {
+    	var table = $('#weddingreception').DataTable();
+		table.search( '' ).draw();
+	});
+} );
+
+
+
+</script>
+
+<span id="list1">list1</span> <span id="list2">list2</span> 
+<span id="in">in</span> 
+<span id="out">out</span> 
+<table id="weddingreception" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr align=left>
+                <th width="15%">男家 / 女家</th>
+                <th width="45%">姓名</th>
+                <th width="25%">枱號</th>
+                <th width="5%">status</th>
+            </tr>
+        </thead>
+
+    </table>
+</body>
+</html>

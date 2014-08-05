@@ -1,0 +1,72 @@
+function init1() {
+
+var selected = [];
+ 
+ 
+
+
+    table = $("#weddingreception").dataTable({
+    	"paging":   false,
+        "ordering": false,
+        "processing": false,
+        "serverSide": false,
+        "order": [[ 0, 'asc' ]],
+        "columnDefs": [
+                       { "visible": false, "targets": 3 }
+                   ],
+        "order": [[ 3, 'asc' ]],
+        "drawCallback": function ( settings ) {
+            var api = this.api();
+            var rows = api.rows( {page:'current'} ).nodes();
+            var last=null;
+ 
+            api.column(2, {page:'current'} ).data().each( function ( group, i ) {
+                if ( last !== group ) {
+                    $(rows).eq( i ).before(
+                        '<tr class="group"><td colspan="5">'+group+'</td></tr>'
+                    );
+ 
+                    last = group;
+                }
+            } );
+        },
+        
+        "ajax": "data/data2.txt",
+         "createdRow": function ( row, data, index ) {
+             if ( data[3] == 'out' ) {
+            	 $(row).addClass('');
+             }
+         },
+         
+    });
+ 
+
+   
+     $('#weddingreception tbody').on('dblclick', 'tr', function () {
+        var id = this.id;
+        var index = $.inArray(id, selected);
+ 
+        if ( index === -1 ) {
+            selected.push( id );
+        } else {
+            selected.splice( index, 1 );
+        }
+  //       $(this).remove().draw( false );
+    } );
+   
+        
+    $('#weddingreception tbody').on('click', 'tr', function () {
+        var id = this.id;
+        var index = $.inArray(id, selected);
+ 		
+        if ( index === -1 ) {
+            selected.push( id );
+        } else {
+            selected.splice( index, 1 );
+        }
+        alert(index);
+    } );
+    
+ }
+
+

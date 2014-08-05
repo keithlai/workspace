@@ -1,0 +1,54 @@
+function init1() {
+
+var selected = [];
+ 
+ 
+
+
+    table = $("#weddingreception").dataTable({
+    	"paging":   false,
+        "ordering": false,
+        "processing": false,
+        "serverSide": false,
+        "ajax": "data/data2.txt",
+        "rowCallback": function( row, data, displayIndex ) {
+            if ( $.inArray(data.DT_RowId, selected) !== -1 ) {
+                $(row).addClass('selected');
+            }
+         },
+         "createdRow": function ( row, data, index ) {
+             if ( data[3] == 'out' ) {
+            	 $(row).addClass('selected');
+             }
+         },
+    });
+ 
+
+   
+     $('#weddingreception tbody').on('dblclick', 'tr', function () {
+        var id = this.id;
+        var index = $.inArray(id, selected);
+ 
+        if ( index === -1 ) {
+            selected.push( id );
+        } else {
+            selected.splice( index, 1 );
+        }
+  //       $(this).remove().draw( false );
+    } );
+   
+        
+    $('#weddingreception tbody').on('click', 'tr', function () {
+        var id = this.id;
+        var index = $.inArray(id, selected);
+ 		
+        if ( index === -1 ) {
+            selected.push( id );
+        } else {
+            selected.splice( index, 1 );
+        }
+    } );
+    
+ }
+
+

@@ -1,0 +1,57 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.2/css/jquery.dataTables.css">
+	<script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" language="javascript" src="//cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+<script>
+$(document).ready(function() {
+    var selected = [];
+ 
+    $("#example").dataTable({
+        "processing": false,
+        "serverSide": false,
+        "ajax": "/gae_bmi",
+        "rowCallback": function( row, data, displayIndex ) {
+            if ( $.inArray(data.DT_RowId, selected) !== -1 ) {
+                $(row).addClass('selected');
+            }
+        }
+    });
+ 
+ 
+   $('#example').click( function () {
+        table.row('.selected').remove().draw( false );
+    } );
+    
+    $('#example tbody').on('click', 'tr', function () {
+        var id = this.id;
+        var index = $.inArray(id, selected);
+ 
+        if ( index === -1 ) {
+            selected.push( id );
+        } else {
+            selected.splice( index, 1 );
+        }
+ 
+        $(this).toggleClass('selected');
+    } );
+    
+} );
+
+</script>
+<table id="example" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr align=left>
+                <th width="15%">男家 / 女家朋友</th>
+                <th width="45%">姓名</th>
+                <th width="25%">枱號</th>
+                <th width="5%">status</th>
+            </tr>
+        </thead>
+
+    </table>
+</body>
+</html>

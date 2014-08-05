@@ -1,0 +1,43 @@
+function init1() {
+
+var selected = [];
+ 
+ 
+
+
+   var table = $("#weddingreception").DataTable({
+    	"paging":   false,
+        "ordering": false,
+        "processing": false,
+        "serverSide": false,
+        "order": [[ 0, 'asc' ]],
+        "columnDefs": [
+                       	{ "visible": true, "targets": 0 },
+                       	{ "visible": true, "targets": 1 },
+                       	{ "visible": true, "targets": 2 },
+                       	{ "visible": true, "targets": 3 },
+                        {
+                            "targets": -1,
+                            "data": null,
+                            "defaultContent": "<button>Click!</button>"
+                        } ],
+        "order": [[ 3, 'asc' ]],
+       
+        
+        "ajax": "data/data2.txt",
+         "createdRow": function ( row, data, index ) {
+             if ( data[3] == 'out' ) {
+            	 $(row).addClass('selected');
+             }
+         },
+         
+    });
+ 
+    $('#weddingreception tbody').on( 'click', 'button', function () {
+        var data = table.row( $(this).parents('tr') ).data();
+    } );
+   
+    
+ }
+
+

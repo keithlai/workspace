@@ -315,3 +315,295 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 20; columnNumber: 7; The s
 !ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-08-05 01:30:20.418
 !MESSAGE Analytics ping response: 200: OK
 GIF89a  €ÿ ÿÿÿ   ,       D ;
+
+!ENTRY org.eclipse.jface 2 0 2014-08-05 02:01:44.395
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-08-05 02:01:44.395
+!MESSAGE A conflict occurred for CTRL+I:
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.indent,Correct Indentation,
+		Corrects the indentation of the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@53b0cd9b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.active.elements,Format Active Elements,
+		Format active elements,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@35e30aa1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-08-05 02:01:44.395
+!MESSAGE A conflict occurred for CTRL+SHIFT+F:
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.format,Format,
+		Format the selected text,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7c8aa609,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.document,Format,
+		Format selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@14bd27e7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-08-05 02:01:44.395
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_UP:
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@729ad8bf,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@257850d6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-08-05 02:01:44.395
+!MESSAGE A conflict occurred for CTRL+O:
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.show.outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@13d256cf,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.quick_outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@140c1e61,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-08-05 02:01:44.395
+!MESSAGE A conflict occurred for CTRL+SHIFT+/:
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.add.block.comment,Add Block Comment,
+		Enclose the selection with a block comment,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@279e7c8f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.add.block.comment,Add Block Comment,
+		Add Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3e6c7624,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-08-05 02:01:44.395
+!MESSAGE A conflict occurred for CTRL+SHIFT+P:
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.matching.bracket,Go to Matching Bracket,
+		Moves the cursor to the matching bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1603a49b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.goto.matching.bracket,Matching Character,
+		Go to Matching Character,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@54bc1357,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.m2e.core.ui.command.addPlugin,Add Maven Plugin,
+		Add Maven Plugin,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@492bc767,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.core.runtime.xml,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-08-05 02:01:44.395
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_DOWN:
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@593060b8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@70a37e7f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-08-05 02:01:44.395
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_UP:
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.previous.member,Go to Previous Member,
+		Move the caret to the previous member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@771dfdc6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.previousSibling,Previous Sibling,
+		Go to Previous Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@9c66c52,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-08-05 02:01:44.395
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_RIGHT:
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@52000f42,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@c9186ef,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-08-05 02:01:44.395
+!MESSAGE A conflict occurred for CTRL+SHIFT+\:
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.remove.block.comment,Remove Block Comment,
+		Remove the block comment enclosing the selection,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1e9e01d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.remove.block.comment,Remove Block Comment,
+		Remove Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1de0ebba,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-08-05 02:01:44.395
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_LEFT:
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@217890e6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@23bcb836,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-08-05 02:01:44.395
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_DOWN:
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.next.member,Go to Next Member,
+		Move the caret to the next member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7270fd34,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.nextSibling,Next Sibling,
+		Go to Next Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2f2207ff,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2014-08-05 23:48:29.771
+!MESSAGE Wedding Reception successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-08-05 23:48:29.862
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.6.0 and GAE 1.9.7, cd3=3.9.0.v20140514-1307, cd4=com.google.gdt.eclipse.suite.e44.feature_3.7.0.v201407290036-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=EDED92B327E5B713BE841577F98F026E7AD561CE, ea=DEPLOY_GAE, cid=1407163668348, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1407163668348&ev=3.9.0.v20140514-1307&v=com.google.gdt.eclipse.suite.e44.feature_3.7.0.v201407290036-rel-r44&gwtv=2.6.0&gaev=1.9.7&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=EDED92B327E5B713BE841577F98F026E7AD561CE&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1407163668348, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-08-05 23:48:29.862
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.6.0%20and%20GAE%201.9.7&cd3=3.9.0.v20140514-1307&cd4=com.google.gdt.eclipse.suite.e44.feature_3.7.0.v201407290036-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=EDED92B327E5B713BE841577F98F026E7AD561CE&ea=DEPLOY_GAE&cid=1407163668348&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1407163668348%26ev%3D3.9.0.v20140514-1307%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.7.0.v201407290036-rel-r44%26gwtv%3D2.6.0%26gaev%3D1.9.7%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DEDED92B327E5B713BE841577F98F026E7AD561CE%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1407163668348&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-08-05 23:48:29.947
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  €ÿ ÿÿÿ   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2014-08-05 23:49:44.467
+!MESSAGE Wedding Reception successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-08-05 23:49:44.553
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.6.0 and GAE 1.9.7, cd3=3.9.0.v20140514-1307, cd4=com.google.gdt.eclipse.suite.e44.feature_3.7.0.v201407290036-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=EDED92B327E5B713BE841577F98F026E7AD561CE, ea=DEPLOY_GAE, cid=1407163668348, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1407163668348&ev=3.9.0.v20140514-1307&v=com.google.gdt.eclipse.suite.e44.feature_3.7.0.v201407290036-rel-r44&gwtv=2.6.0&gaev=1.9.7&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=EDED92B327E5B713BE841577F98F026E7AD561CE&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1407163668348, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-08-05 23:49:44.554
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.6.0%20and%20GAE%201.9.7&cd3=3.9.0.v20140514-1307&cd4=com.google.gdt.eclipse.suite.e44.feature_3.7.0.v201407290036-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=EDED92B327E5B713BE841577F98F026E7AD561CE&ea=DEPLOY_GAE&cid=1407163668348&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1407163668348%26ev%3D3.9.0.v20140514-1307%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.7.0.v201407290036-rel-r44%26gwtv%3D2.6.0%26gaev%3D1.9.7%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DEDED92B327E5B713BE841577F98F026E7AD561CE%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1407163668348&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-08-05 23:49:44.634
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  €ÿ ÿÿÿ   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2014-08-06 02:58:23.638
+!MESSAGE Wedding Reception successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-08-06 02:58:23.727
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.6.0 and GAE 1.9.7, cd3=3.9.0.v20140514-1307, cd4=com.google.gdt.eclipse.suite.e44.feature_3.7.0.v201407290036-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=EDED92B327E5B713BE841577F98F026E7AD561CE, ea=DEPLOY_GAE, cid=1407163668348, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1407163668348&ev=3.9.0.v20140514-1307&v=com.google.gdt.eclipse.suite.e44.feature_3.7.0.v201407290036-rel-r44&gwtv=2.6.0&gaev=1.9.7&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=EDED92B327E5B713BE841577F98F026E7AD561CE&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1407163668348, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-08-06 02:58:23.728
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.6.0%20and%20GAE%201.9.7&cd3=3.9.0.v20140514-1307&cd4=com.google.gdt.eclipse.suite.e44.feature_3.7.0.v201407290036-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=EDED92B327E5B713BE841577F98F026E7AD561CE&ea=DEPLOY_GAE&cid=1407163668348&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1407163668348%26ev%3D3.9.0.v20140514-1307%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.7.0.v201407290036-rel-r44%26gwtv%3D2.6.0%26gaev%3D1.9.7%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DEDED92B327E5B713BE841577F98F026E7AD561CE%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1407163668348&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-08-06 02:58:23.817
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  €ÿ ÿÿÿ   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2014-08-06 03:02:32.560
+!MESSAGE Wedding Reception successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-08-06 03:02:32.660
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.6.0 and GAE 1.9.7, cd3=3.9.0.v20140514-1307, cd4=com.google.gdt.eclipse.suite.e44.feature_3.7.0.v201407290036-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=EDED92B327E5B713BE841577F98F026E7AD561CE, ea=DEPLOY_GAE, cid=1407163668348, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1407163668348&ev=3.9.0.v20140514-1307&v=com.google.gdt.eclipse.suite.e44.feature_3.7.0.v201407290036-rel-r44&gwtv=2.6.0&gaev=1.9.7&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=EDED92B327E5B713BE841577F98F026E7AD561CE&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1407163668348, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-08-06 03:02:32.661
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.6.0%20and%20GAE%201.9.7&cd3=3.9.0.v20140514-1307&cd4=com.google.gdt.eclipse.suite.e44.feature_3.7.0.v201407290036-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=EDED92B327E5B713BE841577F98F026E7AD561CE&ea=DEPLOY_GAE&cid=1407163668348&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1407163668348%26ev%3D3.9.0.v20140514-1307%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.7.0.v201407290036-rel-r44%26gwtv%3D2.6.0%26gaev%3D1.9.7%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DEDED92B327E5B713BE841577F98F026E7AD561CE%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1407163668348&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-08-06 03:02:32.776
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  €ÿ ÿÿÿ   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2014-08-06 03:12:00.186
+!MESSAGE Wedding Reception successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-08-06 03:12:00.275
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=both GWT 2.6.0 and GAE 1.9.7, cd3=3.9.0.v20140514-1307, cd4=com.google.gdt.eclipse.suite.e44.feature_3.7.0.v201407290036-rel-r44, cd1=org.eclipse.epp.package.standard.product, cd2=EDED92B327E5B713BE841577F98F026E7AD561CE, ea=DEPLOY_GAE, cid=1407163668348, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1407163668348&ev=3.9.0.v20140514-1307&v=com.google.gdt.eclipse.suite.e44.feature_3.7.0.v201407290036-rel-r44&gwtv=2.6.0&gaev=1.9.7&p=org.eclipse.epp.package.standard.product&action=gae_backend_deploy&appIdHash=EDED92B327E5B713BE841577F98F026E7AD561CE&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1407163668348, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-08-06 03:12:00.276
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=both%20GWT%202.6.0%20and%20GAE%201.9.7&cd3=3.9.0.v20140514-1307&cd4=com.google.gdt.eclipse.suite.e44.feature_3.7.0.v201407290036-rel-r44&cd1=org.eclipse.epp.package.standard.product&cd2=EDED92B327E5B713BE841577F98F026E7AD561CE&ea=DEPLOY_GAE&cid=1407163668348&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1407163668348%26ev%3D3.9.0.v20140514-1307%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.7.0.v201407290036-rel-r44%26gwtv%3D2.6.0%26gaev%3D1.9.7%26p%3Dorg.eclipse.epp.package.standard.product%26action%3Dgae_backend_deploy%26appIdHash%3DEDED92B327E5B713BE841577F98F026E7AD561CE%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1407163668348&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-08-06 03:12:00.351
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  €ÿ ÿÿÿ   ,       D ;

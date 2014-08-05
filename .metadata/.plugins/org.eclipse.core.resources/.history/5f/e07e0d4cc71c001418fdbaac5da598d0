@@ -1,0 +1,97 @@
+function init1() {
+
+var selected = [];
+ 
+ 
+
+
+    table = $("#example").dataTable({
+    	"paging":   false,
+        "ordering": false,
+        "info":     false,
+        "processing": false,
+        "serverSide": false,
+        "ajax": "data/data2.txt",
+        "rowCallback": function( row, data, displayIndex ) {
+            if ( $.inArray(data.DT_RowId, selected) !== -1 ) {
+                $(row).addClass('selected');
+            }
+        },
+    });
+ 
+
+   
+     $('#example tbody').on('dblclick', 'tr', function () {
+        var id = this.id;
+        var index = $.inArray(id, selected);
+ 
+        if ( index === -1 ) {
+            selected.push( id );
+        } else {
+            selected.splice( index, 1 );
+        }
+  //       $(this).remove().draw( false );
+    } );
+   
+        
+    $('#example tbody').on('click', 'tr', function () {
+        var id = this.id;
+        var index = $.inArray(id, selected);
+ 		
+        if ( index === -1 ) {
+            selected.push( id );
+        } else {
+            selected.splice( index, 1 );
+        }
+     //  $(this).toggleClass('selected');
+    } );
+    
+ }
+
+
+function init2() {
+
+var selected = [];
+ 
+    table = $("#example").dataTable({
+    	"paging":   false,
+        "ordering": false,
+        "info":     false,
+        "processing": false,
+        "serverSide": false,
+        "ajax": "/gae_bmi",
+        "rowCallback": function( row, data, displayIndex ) {
+            if ( $.inArray(data.DT_RowId, selected) !== -1 ) {
+                $(row).addClass('selected');
+            }
+        },
+    });
+ 
+
+   
+     $('#example tbody').on('dblclick', 'tr', function () {
+        var id = this.id;
+        var index = $.inArray(id, selected);
+ 
+        if ( index === -1 ) {
+            selected.push( id );
+        } else {
+            selected.splice( index, 1 );
+        }
+  //  $(this).remove().draw( false );
+    } );
+   
+        
+    $('#example tbody').on('click', 'tr', function () {
+        var id = this.id;
+        var index = $.inArray(id, selected);
+ 		
+        if ( index === -1 ) {
+            selected.push( id );
+        } else {
+            selected.splice( index, 1 );
+        }
+      //  $(this).toggleClass('selected');
+    } );
+    
+ }

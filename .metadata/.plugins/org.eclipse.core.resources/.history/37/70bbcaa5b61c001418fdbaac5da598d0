@@ -1,0 +1,13 @@
+{
+  "draw": 1,
+  "recordsTotal": 6,
+  "recordsFiltered": 3,
+  "data": [
+    [
+      "from":"男",
+      "name":"鍾梅生",
+      "table":"主家席",
+      "status":"in"
+    ]
+  ]
+}
